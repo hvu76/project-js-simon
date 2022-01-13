@@ -2,10 +2,16 @@
   box-sizing: border-box;
 
 }
+
 html {
   background-color: #FCFCFC;
   font-family: Arial;
   font-size: 18px;
+}
+
+body{
+  background-image: url(floating-water.gif);
+  border: 2px solid black;
 }
 
 #content {
@@ -16,13 +22,14 @@ html {
 #content h1 {
   font-size: 3rem;
   text-align: center;
+  color: white;
+  font-family: 'Seaweed Script', cursive;
 }
 
 .simon-container {
   margin: 20px auto;
   width:400px;
   height:400px;
-  background-color:#fff;
   display:grid;
   grid-template-columns: 200px 200px;
   grid-row: auto auto;
@@ -33,26 +40,116 @@ html {
 .simon-container .simon-button {
   align-items: center;
   background-color: #333;
-  border-radius: 10px;
+  border-radius: 50%;
   color: #fff;
   padding: 20px;
   justify-content: center;
   font-size: 40px;
   font-family: sans-serif;
+  border: 3px solid white;
 }
 
 .simon-button.green {
   background-color: #21BA45;
 }
 
+.simon-button.highlight1{
+  background: lightgreen;
+}
+
 .simon-button.red {
   background-color: #DB2828;
+}
+
+.simon-button.highlight2{
+  background-color: coral;
 }
 
 .simon-button.yellow {
   background-color: #FBBD08;
 }
 
+.simon-button.highlight3{
+  background-color: rgb(248, 248, 164);
+}
+
 .simon-button.blue {
   background-color: #2185D0;
+}
+
+.simon-button.highlight4{
+  background-color: lightblue;
+}
+
+.navigate{
+  text-align: center;
+  font-family: 'Seaweed Script', cursive;
+}
+
+.order{
+  text-align: center;
+  color: white;
+}
+
+.playerturn{
+  text-align: center;
+  font-family: 'Seaweed Script', cursive;
+}
+.result{
+  text-align: center;
+  font-family: 'Seaweed Script', cursive;
+  color: white;
+}
+.restart{
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Seaweed Script', cursive;
+}
+
+.start{
+  background-color: rgb(158, 252, 252);
+  border-radius: 4px;
+  padding: 15px 32px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  color:black;
+  display: inline-block;
+  font-family: 'Seaweed Script', cursive;
+}
+
+.start:hover {
+  background-color: cornflowerblue;
+  color: azure;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.clicks{
+  text-align: center;
+  font-family: 'Seaweed Script', cursive;
+  color: white;
+}
+
+.reset{
+  background-color: rgb(158, 252, 252);
+  border-radius: 4px;
+  padding: 15px 32px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: black;
+  display: inline-block;
+  font-family: 'Seaweed Script', cursive;
+}
+
+.unclickable{
+  pointer-events: none;
+}
+
+.playerturn{
+  color: white;
+  font-family: 'Seaweed Script', cursive;
 }

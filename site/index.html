@@ -10,15 +10,34 @@
   </head>
   <body>
     <section id="content">
-      <h1>Simon</h1>
+      <h1>Let's Play Bubble Simon!</h1>
 
-      <div class="simon-container">
-        <div class="simon-button green"></div>
-        <div class="simon-button red"></div>
-        <div class="simon-button yellow"></div>
-        <div class="simon-button blue"></div>
+     <div class="navigate">
+        <button class="start">Start</button>
+        <div class="order hidden">Round
+          <span id='colors'></span>
+        </div>
+      </div> <!-- This is a new section I added-->
+
+      <div class="playerturn"></div>
+
+      <div class="simon-container"> <!-- I added IDs to each button-->
+        <div id = "green" class="simon-button green"></div>
+        <div id = "red" class="simon-button red"></div>
+        <div id = "yellow" class="simon-button yellow"></div>
+        <div id = "blue" class="simon-button blue"></div>
       </div>
+
+      <div class='result'></div> <!-- This is a new section I added-->
+
+      <div class="clicks"></div> <!-- This is a new section I added-->
+
+      <div class="restart hidden">
+        <button class="reset">Restart</button>
+      </div> <!-- This is a new section I added-->
+
     </section>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -27,5 +46,10 @@
 
     <script src="simon.js"></script>
     <script src="buttons.js"></script>
+
+    <audio autoplay>
+      <source src="sea-sound.wav" type="audio/wav">
+    </audio>
+
   </body>
 </html>
